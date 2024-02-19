@@ -124,7 +124,7 @@ function Sidebar() {
                 <p
                 
                   className="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                  activeClassName="text-gray-800 dark:text-gray-100"
+                  // activeClassName="text-gray-800 dark:text-gray-100"
                 >
                     <span
                       className="absolute inset-y-0 left-0 w-1 rounded-tr-lg rounded-br-lg"

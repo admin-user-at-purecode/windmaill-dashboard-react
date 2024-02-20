@@ -1,12 +1,11 @@
 import React from 'react';
 import { Windmill } from '@windmill/react-ui';
-import Layout from './components/common/layout';
+import Login from './pages/login/Login';
 
 function App() {
   return (
     <Windmill usePreferences>
-     <Layout>
-    </Layout>
+      <Login />
     </Windmill>
   );
 }

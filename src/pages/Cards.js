@@ -1,9 +1,9 @@
-import React from 'react'
-import { Card, CardBody } from '@windmill/react-ui'
-import { CartIcon, ChatIcon, MoneyIcon, PeopleIcon } from '../assets/icons'
+import React from "react";
+import { Card, CardBody } from "@windmill/react-ui";
+import { CartIcon, ChatIcon, MoneyIcon, PeopleIcon } from "../assets/icons";
 
-import InfoCard, { CTA, RoundIcon } from '../components/cards/InfoCard'
-import PageTitle, { SectionTitle } from '../components/PageTitle'
+import InfoCard, { CTA, RoundIcon } from "../components/cards/InfoCard";
+import PageTitle, { SectionTitle } from "../components/PageTitle";
 
 function Cards() {
   return (
@@ -14,13 +14,15 @@ function Cards() {
 
       <SectionTitle>Big section cards</SectionTitle>
 
-      <Card className="mb-8 shadow-md">
-        <CardBody>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            Large, full width sections goes here
-          </p>
-        </CardBody>
-      </Card>
+      <div className="fullWidthCard">
+        <Card className="mb-8 shadow-md">
+          <CardBody>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              Large, full width sections goes here
+            </p>
+          </CardBody>
+        </Card>
+      </div>
 
       <SectionTitle>Responsive cards</SectionTitle>
 
@@ -64,14 +66,17 @@ function Cards() {
 
       <SectionTitle>Cards with title</SectionTitle>
 
-      <div className="grid gap-6 mb-8 md:grid-cols-2">
+      <div className="cardWithTitle grid gap-6 mb-8 md:grid-cols-2">
         <Card>
           <CardBody>
-            <p className="mb-4 font-semibold text-gray-600 dark:text-gray-300">Revenue</p>
+            <p className="mb-4 font-semibold text-gray-600 dark:text-gray-300">
+              Revenue
+            </p>
             <p className="text-gray-600 dark:text-gray-400">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, cum commodi a omnis
-              numquam quod? Totam exercitationem quos hic ipsam at qui cum numquam, sed amet
-              ratione! Ratione, nihil dolorum.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
+              cum commodi a omnis numquam quod? Totam exercitationem quos hic
+              ipsam at qui cum numquam, sed amet ratione! Ratione, nihil
+              dolorum.
             </p>
           </CardBody>
         </Card>
@@ -80,15 +85,16 @@ function Cards() {
           <CardBody>
             <p className="mb-4 font-semibold">Colored card</p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, cum commodi a omnis
-              numquam quod? Totam exercitationem quos hic ipsam at qui cum numquam, sed amet
-              ratione! Ratione, nihil dolorum.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
+              cum commodi a omnis numquam quod? Totam exercitationem quos hic
+              ipsam at qui cum numquam, sed amet ratione! Ratione, nihil
+              dolorum.
             </p>
           </CardBody>
         </Card>
       </div>
     </>
-  )
+  );
 }
 
-export default Cards
+export default Cards;

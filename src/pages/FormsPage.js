@@ -1,18 +1,22 @@
-import React from 'react'
+import React from "react";
 
-import { Input, HelperText, Label, Select, Textarea } from '@windmill/react-ui'
+import { Input, HelperText, Label, Select, Textarea } from "@windmill/react-ui";
 
-import { MailIcon } from '../assets/icons'
-import CTA from '../components/CTA'
+import { MailIcon } from "../assets/icons";
+import CTA from "../components/CTA";
 
 function FormsPage() {
   return (
     <div>
-      <h1 className="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">Forms</h1>
+      <h1 className="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
+        Forms
+      </h1>
       <CTA />
-      <h2 className="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Elements</h2>
+      <h2 className="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
+        Elements
+      </h2>
 
-      <div className="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+      <div className="Elements px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
         <Label>
           <span>Name</span>
           <Input className="mt-1" placeholder="Jane Doe" />
@@ -27,7 +31,7 @@ function FormsPage() {
           {/* TODO: Check if this label is accessible, or fallback */}
           {/* <span className="text-sm text-gray-700 dark:text-gray-400">Account Type</span> */}
           <Label>Account Type</Label>
-          <div className="mt-2">
+          <div className="mt-2 RadioGroup">
             <Label radio>
               <Input type="radio" value="personal" name="accountType" />
               <span className="ml-2">Personal</span>
@@ -37,7 +41,12 @@ function FormsPage() {
               <span className="ml-2">Business</span>
             </Label>
             <Label disabled className="ml-6" radio>
-              <Input disabled type="radio" value="disabled" name="accountType" />
+              <Input
+                disabled
+                type="radio"
+                value="disabled"
+                name="accountType"
+              />
               <span className="ml-2">Disabled</span>
             </Label>
           </div>
@@ -66,10 +75,14 @@ function FormsPage() {
 
         <Label className="mt-4">
           <span>Message</span>
-          <Textarea className="mt-1" rows="3" placeholder="Enter some long form content." />
+          <Textarea
+            className="mt-1"
+            rows="3"
+            placeholder="Enter some long form content."
+          />
         </Label>
 
-        <Label className="mt-6" check>
+        <Label className="mt-6 Checkbox" check>
           <Input type="checkbox" />
           <span className="ml-2">
             I agree to the <span className="underline">privacy policy</span>
@@ -77,9 +90,11 @@ function FormsPage() {
         </Label>
       </div>
 
-      <h2 className="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Validation</h2>
+      <h2 className="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
+        Validation
+      </h2>
 
-      <div className="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+      <div className="Validation px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
         <Label>
           <span>Invalid input</span>
           <Input className="mt-1" valid={false} placeholder="Jane Doe" />
@@ -95,14 +110,18 @@ function FormsPage() {
         <Label className="mt-4">
           <span>Helper text</span>
           <Input className="mt-1" placeholder="Jane Doe" />
-          <HelperText>Your password must be at least 6 characters long.</HelperText>
+          <HelperText>
+            Your password must be at least 6 characters long.
+          </HelperText>
         </Label>
       </div>
 
       {/* <!-- Inputs with icons --> */}
-      <h2 className="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Icons</h2>
+      <h2 className="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
+        Icons
+      </h2>
 
-      <div className="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+      <div className="Icons px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
         <Label>
           <span>Icon left</span>
           {/* <!-- focus-within sets the color for the icon when input is focused --> */}
@@ -133,9 +152,11 @@ function FormsPage() {
       </div>
 
       {/* <!-- Inputs with buttons --> */}
-      <h2 className="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Buttons</h2>
+      <h2 className="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
+        Buttons
+      </h2>
 
-      <div className="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+      <div className="Buttons px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
         <Label>
           <span>Button left</span>
           <div className="relative">
@@ -163,7 +184,7 @@ function FormsPage() {
         </Label>
       </div>
     </div>
-  )
+  );
 }
 
-export default FormsPage
+export default FormsPage;

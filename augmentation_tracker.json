@@ -1,0 +1,86 @@
+{
+  "theme_augmentations": {
+    "color": "red",
+    "font": "Arial",
+    "size": "12px",
+    "background": "white",
+    "border": "1px solid black",
+    "radius": "5px",
+    "shadow": "2px 2px 2px 2px #888888"
+  },
+
+  "components_name": [
+    "Header",
+    "Sidebar",
+    "CTA",
+    "Elements",
+    "Validation",
+    "Icons",
+    "Buttons"
+  ],
+
+  "components_count": {
+    "Header": {
+      "count": 1,
+      "location": "At the top of the page",
+      "description": "Title, Search Input, Icon and Dropdowns in flex container"
+    },
+    "Sidebar": {
+      "count": 1,
+      "location": "Left end of the page",
+      "description": "List items in the container, Dropdown and Button"
+    },
+    "CTA": {
+      "count": 1,
+      "location": "below the PageTitle",
+      "description": "contains icon and text in flex container"
+    },
+    "Elements": {
+      "count": 1,
+      "location": "below the CTA",
+      "description": "contains Input elements, RadioGroup, Select elements, Textarea, Checkbox",
+      "children": {
+        "Input": {
+          "count": 2,
+          "location": "at the top in the container, one below the another",
+          "description": "Input for user name"
+        },
+        "RadioGroup": {
+          "count": 1,
+          "location": "below the Input",
+          "description": "contains three, Input with type radio with its respective Label elements"
+        },
+        "Select": {
+          "count": 1,
+          "location": "below the RadioGroup",
+          "description": "contains several option elements to select with in them"
+        },
+        "Textarea": {
+          "count": 1,
+          "location": "below the Select",
+          "description": "It has three rows"
+        },
+        "Checkbox": {
+          "count": 1,
+          "location": "below the Textarea",
+          "description": "contains Input with type checkbox with its respective Label"
+        }
+      }
+    },
+    "Validation": {
+      "count": 1,
+      "location": "below the Elements",
+      "description": "contains three Input elements with their respective Label"
+    },
+    "Icons": {
+      "count": 1,
+      "location": "below the Validation",
+      "description": "contains two Label elements with input and icon inside them"
+    },
+    "Buttons": {
+      "count": 1,
+      "location": "at the bottom in the content section",
+      "description": "contains two Label elements with input and button inside them"
+    }
+  }
+}

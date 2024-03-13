@@ -1,0 +1,44 @@
+{
+  "theme_augmentations": {
+    "color": "red",
+    "font": "Arial",
+    "size": "12px",
+    "background": "white",
+    "border": "1px solid black",
+    "radius": "5px",
+    "shadow": "2px 2px 2px 2px #888888"
+  },
+
+  "components_name": ["Header", "Sidebar", "PageTitle", "CTA", "Button"],
+
+  "components_count": {
+    "Header": {
+      "count": 1,
+      "location": "At the top of the page",
+      "description": "Title, Search Input, Icon and Dropdowns in flex container"
+    },
+    "Sidebar": {
+      "count": 1,
+      "location": "Left end of the page",
+      "description": "List items in the container, Dropdown and Button"
+    },
+    "PageTitle": {
+      "count": 1,
+      "location": "below the Header and to right of the Sidebar",
+      "description": "main heading of the content section"
+    },
+    "CTA": {
+      "count": 1,
+      "location": "below the PageTitle",
+      "description": "contains icon and text in flex container"
+    },
+    "Button": {
+      "count": 1,
+      "location": "below the CTA",
+      "description": "it has a functionality when onclick Modal popup will open"
+    }
+  },
+  "functionality": {
+    "Modal": "a container with text, Button and icon will pops up on clicking Button"
+  }
+}

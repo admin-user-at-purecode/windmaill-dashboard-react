@@ -62,5 +62,8 @@
       "location": "at the bottom in the content section",
       "description": "contains Piechart and LineGraph"
     }
+  },
+  "functionality": {
+    "Pagination": "a feature that allows the table data to be paginated"
   }
 }

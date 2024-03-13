@@ -1,0 +1,66 @@
+{
+  "theme_augmentations": {
+    "color": "red",
+    "font": "Arial",
+    "size": "12px",
+    "background": "white",
+    "border": "1px solid black",
+    "radius": "5px",
+    "shadow": "2px 2px 2px 2px #888888"
+  },
+
+  "components_name": [
+    "Header",
+    "Sidebar",
+    "PageTitle",
+    "CTA",
+    "InfoCard",
+    "TableContainer",
+    "ChartCard"
+  ],
+
+  "components_count": {
+    "Header": {
+      "count": 1,
+      "location": "At the top of the page",
+      "description": "Title, Search Input, Icon and Dropdowns in flex container"
+    },
+    "Sidebar": {
+      "count": 1,
+      "location": "Left end of the page",
+      "description": "List items in the container, Dropdown and Button"
+    },
+    "PageTitle": {
+      "count": 1,
+      "location": "below the Header and to right of the Sidebar",
+      "description": "main heading of the content section"
+    },
+    "CTA": {
+      "count": 1,
+      "location": "below the PageTitle",
+      "description": "contains icon and text in flex container"
+    },
+    "InfoCard": {
+      "count": 4,
+      "location": "below the CTA in the flex container",
+      "description": "contains icon, text and value"
+    },
+    "TableContainer": {
+      "count": 1,
+      "location": "below the InfoCard",
+      "description": "a table with 10 rows and 4 columns containing names, amount, status, and date",
+      "children": {
+        "Pagination": {
+          "count": 1,
+          "location": "at the bottom of the Table in the TableFooter",
+          "description": "It allows the table data to paginate"
+        }
+      }
+    },
+    "ChartCard": {
+      "count": 1,
+      "location": "at the bottom in the content section",
+      "description": "contains Piechart and LineGraph"
+    }
+  }
+}

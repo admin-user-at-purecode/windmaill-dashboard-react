@@ -1,0 +1,63 @@
+{
+  "theme_augmentations": {
+    "color": "red",
+    "font": "Arial",
+    "size": "12px",
+    "background": "white",
+    "border": "1px solid black",
+    "radius": "5px",
+    "shadow": "2px 2px 2px 2px #888888"
+  },
+
+  "components_name": ["Image", "Form"],
+
+  "components_count": {
+    "Image": {
+      "count": 1,
+      "location": "left side in the flex container",
+      "description": "Image"
+    },
+    "Form": {
+      "count": 1,
+      "location": "right side in the flex container",
+      "description": "contains PageTitle, Input, Checkbox and Button",
+      "children": {
+        "PageTitle": {
+          "count": 1,
+          "location": "at the top in the Form",
+          "description": "main heading of the Form component"
+        },
+        "Input": {
+          "count": 3,
+          "location": "below the PageTitle",
+          "description": "Input for taking user name, password and for confirming password"
+        },
+        "Checkbox": {
+          "count": 1,
+          "location": "above the CreateButton",
+          "description": "Input with type checkbox with its respective Label"
+        },
+        "CreateButton": {
+          "count": 1,
+          "location": "below the Checkbox",
+          "description": "contains text"
+        },
+        "Line": {
+          "count": 1,
+          "location": "below the CreateButton",
+          "description": "a horizontal line"
+        },
+        "outlineButton": {
+          "count": 1,
+          "location": "below the Line",
+          "description": "it has border , icon and text"
+        },
+        "Link": {
+          "count": 1,
+          "location": "at the bottom in the Form component",
+          "description": "contains text"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "theme_augmentations": {
+    "color": "red",
+    "font": "Arial",
+    "size": "12px",
+    "background": "white",
+    "border": "1px solid black",
+    "radius": "5px",
+    "shadow": "2px 2px 2px 2px #888888"
+  },
+
+  "components_name": ["Image", "Form"],
+
+  "components_count": {
+    "Image": {
+      "count": 1,
+      "location": "Left side in the flex container",
+      "description": "Image"
+    },
+    "Form": {
+      "count": 1,
+      "location": "right side in the flex container",
+      "description": "contains PageTitle, Input and Button",
+      "children": {
+        "PageTitle": {
+          "count": 1,
+          "location": "at the top in Form",
+          "description": "main heading of the page"
+        },
+        "Input": {
+          "count": 1,
+          "location": "below the PageTitle",
+          "description": "Input for recovery password"
+        },
+        "Button": {
+          "count": 1,
+          "location": "at the bottom in the Form",
+          "description": "contains text and background color"
+        }
+      }
+    }
+  }
+}

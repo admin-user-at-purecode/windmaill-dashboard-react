@@ -22,15 +22,15 @@
       "location": "Left end of the page",
       "description": "List items in the container, Dropdown and Button"
     },
-    "PageTitle":{
-      "count":1,
-      "location":"below the Header to the right of Sidebar",
-      "description":"main heading of the content section"
+    "PageTitle": {
+      "count": 1,
+      "location": "below the Header to the right of Sidebar",
+      "description": "main heading of the content section"
     },
-    "ChartCard":{
-      "count":1,
-      "location":"below the PageTitle in flex container",
-      "description":"contains Piechart, LineGraph and BarGraph"
+    "ChartCard": {
+      "count": 3,
+      "location": "below the PageTitle in flex container",
+      "description": "contains Piechart, LineGraph and BarGraph"
     }
   }
 }

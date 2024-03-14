@@ -48,7 +48,7 @@
           "description": "a horizontal line"
         },
         "outlineButton": {
-          "count": 1,
+          "count": 2,
           "location": "below the Line",
           "description": "it has border , icon and text"
         },
